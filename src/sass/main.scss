@@ -1,6 +1,6 @@
 :root {
   --color-dark: #3547aa;
-  --color-light: #88c5bc;
+  --color-light: #89ceca;
 }
 
 body {
@@ -50,16 +50,14 @@ img {
   margin-bottom: 50px;
 
   animation-name: bounceInDown;
-
-  animation-duration: 1500ms;
 }
 
 .search-title {
-  margin-top: 100px;
+  color: #d172ad;
   text-align: center;
+  font-size: 54px;
+  margin-top: 80px;
   animation-name: bounceInDown;
-
-  animation-duration: 2000ms;
 }
 
 .search-form-input,
@@ -74,7 +72,7 @@ img {
   outline: none;
   width: 100%;
   background-color: transparent;
-  padding: 0 1.6rem;
+  padding: 20px;
   appearance: none;
   z-index: 1;
   position: relative;
@@ -89,7 +87,8 @@ img {
   right: 0;
   width: 140px;
   font-weight: bold;
-  background-color: transparent;
+  background-color: #acb4e2;
+  border-radius: 50%;
   cursor: pointer;
 
   transition: opacity 500ms ease-in-out;
@@ -107,7 +106,6 @@ img {
   margin-left: 50px;
   margin-top: 50px;
 
-  border-radius: 10px;
   overflow: hidden;
   opacity: 0;
   background-color: var(--color-light);
@@ -119,8 +117,6 @@ img {
 
   &:hover {
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px 5px;
-
     transform: scale(1.05) !important;
   }
 }
@@ -153,34 +149,4 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-}
-
-.back2top {
-  position: fixed;
-
-  bottom: 60px;
-  right: 30px;
-  width: 70px;
-  height: 70px;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  opacity: 0;
-
-  font-size: 42px;
-  background-color: transparent;
-
-  transition: opacity 250ms ease-in-out, background-color 250ms ease-in-out,
-    transform 250ms ease-in-out;
-  background-color: var(--color-light);
-  box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px 5px;
-
-  &.show {
-    opacity: 0.6;
-
-    &:hover {
-      opacity: 1;
-      transform: scale(1.15);
-    }
-  }
 }

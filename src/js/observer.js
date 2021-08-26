@@ -1,5 +1,4 @@
 import { onLoadMore } from './imageFinder';
-import { back2TopBtnRef } from './refs';
 
 const loadOpts = {
   rootMargin: '100px',
